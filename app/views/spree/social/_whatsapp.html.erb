@@ -1,0 +1,15 @@
+<% content_for :head do %>
+  <meta property="og:site_name" content="JamaaShop" />
+  <meta property="og:title" content="<%= @product.name %>" />
+  <meta property="og:type" content="product" />
+  <meta property="og:url" content="<%= spree.product_url(@product) %>" />
+  <meta property="og:description" content="<%= @product.description %>" />
+  <% @product.images.each do |img| %>
+    <% url = Rails.application.routes.url_helpers.rails_blob_url(img.attachment) %>
+    <meta property="og:image" content="<%= absolute_image_url(url) %>" />
+  <% end %>
+<% end %>
+
+<%= link_to 'whatsapp://send?' + { text: (@product.name + ' ' + spree.product_url(@product)) }.to_param, class: 'fa fa-whatsapp', 'data-count': "none" do %>
+  <%= Spree.t(:whatsapp, scope: [:social, :buttons]) %>
+<% end %>

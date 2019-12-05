@@ -1,5 +1,6 @@
 module Spree
   class SocialSetting < Preferences::Configuration
+    preference :whatsapp_button,          :boolean, default: true
     preference :twitter_button,           :boolean, default: true
     preference :google_plus_button,       :boolean, default: true
     preference :tumblr_button,            :boolean, default: false
@@ -28,7 +29,7 @@ module Spree
     end
 
     def social_services
-      %w(twitter facebook pinterest google_plus delicious reddit tumblr)
+      %w(whatsapp twitter facebook pinterest google_plus delicious reddit tumblr)
     end
   end
 end

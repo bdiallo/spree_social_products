@@ -1,0 +1,26 @@
+---
+fr:
+  spree:
+    social:
+      bookmark_or_share_this: "Partager"
+      social_sharing_settings_description: "Activer ou désactiver le partage sur ces réseaux sur les pages de produits"
+      social_sharing_settings_updated: "Les paramètres de partage ont été mis à jour avec succès."
+      settings: "Paramètres Partages Sociaux"
+      service_settings: "Paramètres Service"
+      facebook_settings: "Paramètres Facebook"
+      twitter_settings: "Paramètres Twitter"
+      buttons:
+        delicious: Delicious
+        submit_to_reddit: "Soumettre à Reddit"
+        share_on_tumblr: "Partager sur Tumblr"
+        tweet: Tweet
+        whatsapp: "WhatsApp"
+      preferences:
+        service_button: '%{service} Button'
+        facebook_layout: "Type de bouton"
+        facebook_app_id: Facebook App ID
+        facebook_show_faces: Show Faces Facebook
+        facebook_verb_to_display: "Verbe à afficher"
+        facebook_color_scheme: "Schéma de couleur"
+        facebook_send_button: "Bouton Partager"
+        twitter_id: Twitter ID

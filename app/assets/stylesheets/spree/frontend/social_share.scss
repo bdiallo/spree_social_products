@@ -38,4 +38,28 @@
     height: 20px;
     background: url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;
   }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid green;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+
+    .fa-whatsapp {
+      padding-top: 5px;
+      font-size: 40px;
+      text-decoration: none;
+      color: green;
+    }
+
+    &:hover {
+      background-color: green;
+      .fa-whatsapp {
+        color: white;
+      }
+    }
+  }
 }

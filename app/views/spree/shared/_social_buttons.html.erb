@@ -1,6 +1,11 @@
 <div id="social_nav">
   <h6><%= Spree.t(:bookmark_or_share_this, scope: :social) %></h6>
   <ul>
+    <% if Spree::Social::Config.preferred_whatsapp_button %>
+      <li class="whatsapp">
+        <%= render 'spree/social/whatsapp' %>
+      </li>
+    <% end %>
     <% if Spree::Social::Config.preferred_twitter_button %>
       <li class="twitter">
         <%= render 'spree/social/twitter' %>
